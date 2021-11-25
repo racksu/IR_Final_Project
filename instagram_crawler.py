@@ -67,7 +67,7 @@ def get_comment_number(browser,contain_reply=False):
             break
     
     if contain_reply==True:
-        rp_bts=browser.find_elements(By.CSS_SELECTOR,"button[class*='y3zKF']")
+        rp_bts=browser.find_elements(By.CSS_SELECTOR,"button[class*='sqdOP']")
 
         for b in rp_bts:
             browser.execute_script("arguments[0].click();", b)
@@ -116,7 +116,6 @@ def get_post_info(browser,tag_list=[],post_amount=10,contain_reply=False):
                 print("留言數: %d" %coment_number)
 
 if __name__=='__main__':
-
     browser=login_IG()
     tag_lists=["百岳"]
     get_post_info(browser,tag_lists,1,contain_reply=True)
