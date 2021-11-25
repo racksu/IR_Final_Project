@@ -67,7 +67,7 @@ def get_comment_number(browser,contain_reply=False):
             break
     
     if contain_reply==True:
-        rp_bts=browser.find_elements(By.CSS_SELECTOR,"button[class*='sqdOP']")
+        rp_bts=browser.find_elements(By.CSS_SELECTOR,"button[class*='y3zKF']")
 
         for b in rp_bts:
             browser.execute_script("arguments[0].click();", b)
