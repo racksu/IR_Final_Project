@@ -5,7 +5,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-def login_IG(account="rack_3952",password='su880130'):
+def login_IG(account="rack_3952",password='IG@f5ca1666'):
     browser = webdriver.Firefox()
     browser.get('https://www.instagram.com/')
 
